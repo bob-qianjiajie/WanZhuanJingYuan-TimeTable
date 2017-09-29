@@ -1,0 +1,200 @@
+<!--index.wxml-->
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六']}}" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view style="height:1440rpx;width:900rpx;display:flex;">
+    <view style="background-color:#D2E6B3;color:#7cba23;">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="left">
+        {{item}}
+      </view>
+    </view>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}">
+      <view style="width:900rpx;margin-top:{{(index+1)*120}}rpx;  position: absolute;border-bottom:1rpx solid {{index==4?'red':'lightgray'}};">
+      </view>
+    </view>
+
+     <!--星期一-->
+    <view wx:if="{{class[1]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:0rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[9%9]}}">
+            <view class="smalltext" >{{class[1]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[2]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:0rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[10%9]}}">
+            <view class="smalltext" >{{class[2]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[3]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:0rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[11%9]}}">
+            <view class="smalltext" >{{class[3]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[4]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:0rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[4]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[5]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:0rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[13%9]}}">
+            <view class="smalltext" >{{class[5]}}</view>
+        </view>
+    </view>
+
+    <!--星期二-->
+    <view wx:if="{{class[6]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:125rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[6]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[7]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:125rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[7]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[8]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:125rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[8]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[9]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:125rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[9]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[10]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:125rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[10]}}</view>
+        </view>
+    </view>
+    <!--星期三-->
+    <view wx:if="{{class[11]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:247rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[19%9]}}">
+            <view class="smalltext" >{{class[11]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[12]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:247rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[18%9]}}">
+            <view class="smalltext" >{{class[12]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[13]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:247rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[14%9]}}">
+            <view class="smalltext" >{{class[13]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[14]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:247rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[16%9]}}">
+            <view class="smalltext" >{{class[14]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[15]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:247rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[15]}}</view>
+        </view>
+    </view>
+    <!--星期四-->
+    <view wx:if="{{class[16]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:369rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[19%9]}}">
+            <view class="smalltext" >{{class[16]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[17]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:369rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[18%9]}}">
+            <view class="smalltext" >{{class[17]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[18]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:369rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[14%9]}}">
+            <view class="smalltext" >{{class[18]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[19]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:369rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[16%9]}}">
+            <view class="smalltext" >{{class[19]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[20]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:369rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[20]}}</view>
+        </view>
+    </view>
+    <!--星期五-->
+    <view wx:if="{{class[21]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:490rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[19%9]}}">
+            <view class="smalltext" >{{class[21]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[22]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:490rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[18%9]}}">
+            <view class="smalltext" >{{class[22]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[23]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:490rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[14%9]}}">
+            <view class="smalltext" >{{class[23]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[24]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:490rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[16%9]}}">
+            <view class="smalltext" >{{class[24]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[25]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:490rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[25]}}</view>
+        </view>
+    </view>
+    <!--星期六-->
+    <view wx:if="{{class[26]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:612rpx;margin-top:36rpx;height:204rpx;background-color:{{colorArrays[19%9]}}">
+            <view class="smalltext" >{{class[26]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[27]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:612rpx;margin-top:243rpx;height:358rpx;background-color:{{colorArrays[18%9]}}">
+            <view class="smalltext" >{{class[27]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[28]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:612rpx;margin-top:603rpx;height:238rpx;background-color:{{colorArrays[14%9]}}">
+            <view class="smalltext" >{{class[28]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[29]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:612rpx;margin-top:843rpx;height:238rpx;background-color:{{colorArrays[16%9]}}">
+            <view class="smalltext" >{{class[29]}}</view>
+        </view>
+    </view>
+
+    <view wx:if="{{class[30]!=''}}">
+        <view class="flex-item kcb-item" style="margin-left:612rpx;margin-top:1082rpx;height:358rpx;background-color:{{colorArrays[12%9]}}">
+            <view class="smalltext" >{{class[30]}}</view>
+        </view>
+    </view>
+
+  </view>
+</scroll-view>

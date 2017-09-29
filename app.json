@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/requ/requ",
+    "pages/air_class/air_class",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "TimeTable",
+    "navigationBarBackgroundColor": "#7cba23",
+    "navigationBarTextStyle": "light"
+  }
+}

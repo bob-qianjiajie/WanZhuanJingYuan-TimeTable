@@ -1,0 +1,20 @@
+<!--login.wxml-->
+<view class="container">
+  <block>
+    <view class="content">
+      <view class="bd">
+        <form class="login-form" bindsubmit="formSubmit">
+          <view class="input-group">
+            <text class="input-label">班级编号</text>
+            <input cursor-spacing="30" name="userid" id="userid" maxlength="7" placeholder="例：S602215" bindfocus="inputFocus"/>
+          </view>
+        <view class="confirm-btn">
+            <button formType="submit">确定</button>
+        </view>
+        </form> 
+      </view>
+
+    </view>
+  </block>
+
+</view>
